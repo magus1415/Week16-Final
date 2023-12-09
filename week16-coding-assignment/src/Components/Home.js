@@ -1,18 +1,17 @@
-import React, { useState } from 'react';
-import About from './About';
-
+import React from 'react';
+import AlertBanner from './AlertBanner';
+import { Container } from 'react-bootstrap';
 
 function Home() {
+    return (
+        <>
+            <Container>
+                <h1 className='m-4'>Home</h1>
+                <AlertBanner />
+            </Container>
 
-
-console.log('this is from Home.js: ')
-
-  return (
-    <>
-    <div>Home</div>
-
-    </>
-  )
+        </>
+    )
 }
 
 export default Home
